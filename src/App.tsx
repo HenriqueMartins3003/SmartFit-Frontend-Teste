@@ -1,5 +1,6 @@
-import "./App.css";
+import { QueryClient, QueryClientProvider } from "react-query";
 
+const queryClient = new QueryClient();
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Ola mundo!!</h1>;
+  return <QueryClientProvider client={queryClient}></QueryClientProvider>;
 }
