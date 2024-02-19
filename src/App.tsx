@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import Welcome from "./components/welcome";
 import Header from "./components/header";
 import Filter from "./components/filter";
+import Labels from "./components/labels";
 
 const queryClient = new QueryClient();
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Welcome />
       <Filter />
+      <Labels />
     </QueryClientProvider>
   );
 }
