@@ -3,7 +3,7 @@ const Welcome = () => {
     <div className="py-12 px-5">
       <h1 className="text-4xl font-bold uppercase mb-6">
         Reabertura <br />
-        SmartFit{" "}
+        Smart Fit{" "}
       </h1>
 
       <div className="h-4 w-40 bg-brand-darkGrey mb-8"></div>

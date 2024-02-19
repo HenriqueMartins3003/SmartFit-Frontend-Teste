@@ -1,3 +1,4 @@
+import Button from "./button";
 import InputsGroup from "./inputsGroup";
 
 const Filter = () => {
@@ -12,24 +13,27 @@ const Filter = () => {
           Qual período quer treinar ?
         </h2>
         <InputsGroup />
-        <div>
-          <div className="flex flex-col items-center gap-3 mt-5">
-            <div className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                name="showClosedUnits"
-                id="showClosedUnits"
-                className="w-4 h-4"
-              />
-              <label htmlFor="showClosedUnits" className="text-black">
-                Exibir unidades fechadas
-              </label>
-            </div>
-            <h3>
-              Resultados encontrados:{" "}
-              <span className="font-semibold text-xl"> 0 </span>
-            </h3>
+
+        <div className="flex flex-col items-center gap-3 mt-5">
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="showClosedUnits"
+              id="showClosedUnits"
+              className="w-4 h-4"
+            />
+            <label htmlFor="showClosedUnits" className="text-black">
+              Exibir unidades fechadas
+            </label>
           </div>
+          <h3>
+            Resultados encontrados:{" "}
+            <span className="font-semibold text-xl"> 0 </span>
+          </h3>
+        </div>
+        <div className="flex flex-col gap-2 mt-5">
+          <Button variant="primary">Encontrar Unidade</Button>
+          <Button variant="outlined">Limpar</Button>
         </div>
       </div>
     </div>
